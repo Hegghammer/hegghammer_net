@@ -10,6 +10,8 @@ project:
   post-render: 
     - assets/code/move_files.R
 
+date-format: "D MMMM YYYY"
+
 execute:
   freeze: auto
 
