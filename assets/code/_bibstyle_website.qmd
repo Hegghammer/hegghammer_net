@@ -107,8 +107,8 @@ with(
 with(
   custom,
   custom$fmtEdBookTitle <- function(paper) {
-    if (length(paper$title)) {
-      res <- cleanupLatex(paper$title)
+    if (length(paper$booktitle)) {
+      res <- cleanupLatex(paper$booktitle)
       if (grepl("[.?!]$", res, useBytes = FALSE)) {
         emph(res)
       } else {

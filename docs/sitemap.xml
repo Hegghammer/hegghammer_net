@@ -1,28 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://hegghammer.net/pubs/books/index.html</loc>
-    <lastmod>2025-01-13T13:40:42.000Z</lastmod>
-  </url>
-  <url>
-    <loc>https://hegghammer.net/resources/index.html</loc>
-    <lastmod>2025-01-17T11:09:50.021Z</lastmod>
-  </url>
-  <url>
-    <loc>https://hegghammer.net/resources/active-citation/azzam-and-palestine/index.html</loc>
-    <lastmod>2025-01-11T22:16:59.000Z</lastmod>
-  </url>
-  <url>
-    <loc>https://hegghammer.net/about/cv/index.html</loc>
-    <lastmod>2025-01-17T08:54:37.200Z</lastmod>
-  </url>
-  <url>
-    <loc>https://hegghammer.net/about/index.html</loc>
-    <lastmod>2025-01-13T13:51:14.000Z</lastmod>
-  </url>
-  <url>
     <loc>https://hegghammer.net/index.html</loc>
-    <lastmod>2025-01-17T15:01:47.711Z</lastmod>
+    <lastmod>2025-01-17T15:01:47.000Z</lastmod>
   </url>
   <url>
     <loc>https://hegghammer.net/resources/active-citation/palestine-effect/index.html</loc>
@@ -30,10 +10,26 @@
   </url>
   <url>
     <loc>https://hegghammer.net/pubs/index.html</loc>
-    <lastmod>2025-01-17T14:03:04.067Z</lastmod>
+    <lastmod>2025-01-17T17:01:32.846Z</lastmod>
   </url>
   <url>
-    <loc>https://hegghammer.net/assets/code/cv.pdf.html</loc>
-    <lastmod>2025-01-17T15:01:25.724Z</lastmod>
+    <loc>https://hegghammer.net/about/cv/index.html</loc>
+    <lastmod>2025-01-17T08:54:37.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://hegghammer.net/about/index.html</loc>
+    <lastmod>2025-01-13T13:51:14.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://hegghammer.net/pubs/books/index.html</loc>
+    <lastmod>2025-01-13T13:40:42.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://hegghammer.net/resources/active-citation/azzam-and-palestine/index.html</loc>
+    <lastmod>2025-01-11T22:16:59.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://hegghammer.net/resources/index.html</loc>
+    <lastmod>2025-01-17T11:09:50.000Z</lastmod>
   </url>
 </urlset>
