@@ -39,12 +39,12 @@ website:
         text: Resources 
         href: resources/index.qmd
     right:
-      - href: "{{< var orcid >}}"
-        text: "{{< iconify academicons:orcid size=1.7em title='ORCID' >}}"
+      # - href: "{{< var orcid >}}"
+      #   text: "{{< iconify academicons:orcid size=1.7em title='ORCID' >}}"
       - href: "{{< var google-scholar-profile >}}"
         text: "{{< iconify academicons:google-scholar size=1.7em title='Google Scholar'>}}" 
-      - href: "{{< var zotero-profile >}}"
-        text: "{{< iconify academicons:zotero size=1.7em title='Zotero' >}}"
+      # - href: "{{< var zotero-profile >}}"
+      #   text: "{{< iconify academicons:zotero size=1.7em title='Zotero' >}}"
       - href: "{{< var github-profile >}}"
         text: "{{< iconify mdi:github size=1.7em title='Github' >}}" 
       - href: "{{< var bluesky-profile >}}"
@@ -55,7 +55,8 @@ website:
   page-footer:
     left: |
       [&copy; 2001-{{< var current-year >}} Thomas Hegghammer](about/index.qmd) <p xmlns:cc="http://creativecommons.org/ns#" >This work is licensed under <a href="https://creativecommons.org/licenses/by/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY 4.0<img style="height:15px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" alt=""><img style="height:15px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" alt=""></a></p>
-      
+    center: |
+      ORCID: [0000-0001-6253-1518](https://orcid.org/0000-0001-6253-1518) 
     right: |
       [{{< fa brands github >}} source code]({{< var github-website-repo >}})
 
