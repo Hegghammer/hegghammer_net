@@ -1,6 +1,6 @@
 ---
 title: Academic CV
-date: 2024-03-22
+date: today
 published-title: Last updated
 ---
 
