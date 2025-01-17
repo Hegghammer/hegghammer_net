@@ -1,0 +1,233 @@
+---
+format: typst
+echo: false
+output-file: cv.pdf
+---
+
+```{=typst}
+#set align(center)
+```
+
+## THOMAS HEGGHAMMER
+All Souls College, Oxford OX1 4AL, UK  
+thomas.hegghammer@all-souls.ox.ac.uk  
+https://hegghammer.net  
+Last updated `r format(Sys.Date(), "%e %B %Y")`  
+
+```{=typst}
+#set align(left)
+
+== Education
+
+#table(
+  stroke: none,
+  columns: (auto, 1fr),
+  [2003-07], [PhD, Sciences-Pô Paris, Department of Political Science.],
+  [1999-01], [MPhil, Oxford University (Balliol College), Faculty 
+of Oriental Studies.],
+  [1996-99], [BA, Oxford University (Balliol College), Faculty of Oriental Studies.],
+)
+
+== Employment
+
+#table(
+  stroke: none,
+  columns: (auto, 1fr),
+  [2022-], [Senior Research Fellow, All Souls College, Oxford University.],
+  [2001-22], [Research Fellow, Norwegian Defence Research Establishment (FFI).],
+  [2015-20], [Adjunct Professor of Political Science, Oslo University.],
+  [2012-13], [Zuckerman Fellow, Stanford University (CISAC).],
+  [2009-10], [William D. Loughlin Member, Institute for Advanced Study, Princeton.],
+  [2008-09], [Fellow, Harvard University (Belfer Center).],
+  [2007-08], [Postdoctoral Research Fellow, Princeton University (PIIRS).],
+)  
+```
+
+### Publications
+
+{{< include _bibdata_get.qmd >}}
+
+{{< include _bibdata_sift.qmd >}}
+
+{{< include _bibstyle_cv.qmd >}}
+
+```{r}
+#| label: set-options
+
+BibOptions(
+  check.entries = FALSE,
+  style = "markdown",
+  bib.style = "cv",
+  sorting = "ydnt",
+  no.print.fields = c("isbn", "issn", "language", "url", "urldate", "note", "doi"),
+  first.inits = FALSE,
+  dashed = FALSE
+)
+```
+
+#### Books
+
+```{r}
+#| label: print-books
+#| results: asis
+print(books_en)
+```
+
+#### Articles
+
+```{r}
+#| label: print-academic-articles
+#| results: asis
+print(arts_aca_en)
+```
+
+#### Chapters
+
+```{r}
+#| label: print-chapters
+#| results: asis
+print(chapters_en)
+```
+
+#### Reports
+
+```{r}
+#| label: print-reports
+#| results: asis
+print(reports_en)
+```
+
+#### Book reviews
+
+```{r}
+#| label: print-reviews
+#| results: asis
+print(reviews_en)
+```
+
+#### Opeds and short articles
+
+```{r}
+#| label: print-short-articles
+#| results: asis
+print(arts_nonaca_en)
+```
+
+#### Publications in Norwegian
+
+##### Books
+
+```{r}
+#| label: print-books-no
+#| results: asis
+print(books_no)
+```
+
+##### Articles
+
+```{r}
+#| label: print-academic-articles-no
+#| results: asis
+print(arts_aca_no)
+```
+
+##### Chapters
+
+```{r}
+#| label: print-chapters-no
+#| results: asis
+print(chapters_no)
+```
+
+##### Reports
+```{r}
+#| label: print-reports-no
+#| results: asis
+print(reports_no)
+```
+
+##### Reviews
+
+```{r}
+#| label: print-reviews-no
+#| results: asis
+print(reviews_no)
+```
+
+##### Opeds
+
+```{r}
+#| label: print-short-articles-no
+#| results: asis
+print(arts_nonaca_no)
+```
+
+### Manuscripts in preparation
+
+Mujahidin: A History of Islamist Militants. Book under contract with Penguin (UK) and Farrar, Strauss & Giroux (USA).
+
+### Software and datasets
+
+"daiR: An R package for Google Document AI" (https://dair.info, on CRAN in June 2021).
+
+"Noisy OCR Dataset (NOD)", Zenodo, June 2021.
+
+### Awards
+
+```{=typst}
+#table(
+  stroke: none,
+  columns: (auto, 1fr),
+  [2014], [Article of the Year Award, Fulbright Norway.],
+  [2012], [Fulbright fellowship (for 2012-13 academic year at Stanford).],
+  [2011], [Arthur Ross Book Award (silver), Council on Foreign Relations (for Jihad in Saudi Arabia).],
+  [2011], [Young Scholar of the Year Award, Royal Norwegian Society of Sciences and Letters.],
+  [2000], [Chevening Scholarship, British Council.],
+  [1999], [Jenkyns Prize, Balliol College, Oxford University.],
+)  
+
+== Grants
+
+#table(
+  stroke: none,
+  columns: (auto, 1fr),
+  [2022], ["Machine learning and threat actors", 1-year pilot project (EUR 100k), Norwegian
+Ministry of Defence.],
+  [2020], ["The Socio-economics of Islamist Radicalization in the West", Norwegian Research
+Council (EUR 1M). 4-year project involving FFI, LSE, and PRIO.],
+  [2003], ["Salafi Jihadism in Saudi Arabia", 3-year PhD grant, Norwegian Ministry of Defence.],
+) 
+```
+
+### Editorial board memberships
+
+Dynamics of Asymmetric Conflict; European Journal of International Relations; Perspectives on Terrorism; Politics, Religion and Ideology; Terrorism and Political Violence
+
+### Teaching
+
+Norwegian Defence Research Establishment, "R for qualitative research", winter 2020-2021.
+
+Oslo University (Political Science), "Terrorism in Western Democracies", spring 2019.
+
+Norwegian Defence Research Establishment, "Publishing craft for security scholars", autumn 2014, spring 2022.
+
+Stanford University (Political Science), "Terrorism", spring 2012.
+
+Princeton University (Near East Studies), "Militant Islamism", spring 2008.
+
+### Supervision and examination 
+
+*PhD supervision*: Erik Skare (University of Oslo). 
+
+*PhD examinations*: Jasper Schwampe (Aarhus University, 2018), Simone Molin Friis (Copenhagen University, 2018), Sara Jul Jacobsen (Roskilde University, 2019), Charlie Winter (King’s College London, 2020), Tore Hamming (European University Institute, 2020), Eline Drury Løvlien (NTNU, 2021), Haid Haid (King’s College London, 2021), Marie Robin (2022), Ellen Tveteraas (Oxford University, 2023), Aymenn al-Tamimi (Swansea University, 2023), Natasja Rupesinghe (Oxford University, 2024), Jacob Schram (Oxford University, 2024)
+
+### Public service
+
+*Parliamentary testimonies*: Danish Parliament (2006); Canadian Senate (2005 and 2010); US Congress (2013); British Par-
+liament (2014).
+
+*Board and committee memberships*: Board member, Norwegian Centre for Conflict Resolution (NOREF) (2017-2022); Advisory group member, Polyteknisk forening (2017-2019); Board member, Norwegian Defence University College (2011-2015); Expert Advisory Group member, Statoil investigation of In Amenas attack (2013).
+
+### Other
+
+Norwegian "professorial competence" (equivalent to the continental "Habilitation") obtained in June 2014

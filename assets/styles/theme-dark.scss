@@ -1,0 +1,39 @@
+/*-- scss:defaults --*/
+
+$gray10: #f8f9fa !default;
+$gray20: #e9ecef !default;
+$gray30: #dee2e6 !default;
+$gray40: #ced4da !default;
+$gray50: #adb5bd !default;
+$gray60: #868e96 !default;
+$gray70: #495057 !default;
+$gray80: #373a3c !default;
+$gray90: #212529 !default;
+
+$blue: #2780e3 !default;
+$indigo: #6610f2 !default;
+$purple: #170C3A !default;
+$pink: #A52C60 !default;
+$red: #CF4446 !default;
+$orange: #EE6A24 !default;
+$light-orange: #FB9E07 !default;
+$yellow: #F6D645 !default;
+$green: #118230 !default;
+$teal: #20c997 !default;
+$cyan: #3093CF !default;
+
+$primary-bg: $gray90 !default;
+$primary-fg: $gray30 !default;
+
+// Body
+$body-bg: $primary-bg !default;
+$body-color: $primary-fg !default;
+$link-color: LightCoral !default;
+
+// Navbar
+$navbar-bg: $primary-bg !default;
+$navbar-fg: $primary-fg !default;
+
+// Footer
+$footer-bg: $primary-bg !default;
+

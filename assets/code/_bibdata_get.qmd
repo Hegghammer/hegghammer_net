@@ -1,0 +1,37 @@
+```{r}
+#| label: load-data
+#| message: false
+#| warning: false
+#| include: false
+
+library(RefManageR)
+
+bib1 <- ReadZotero(
+  user = Sys.getenv("ZOTERO_USER"),
+  .params = list(
+    key = Sys.getenv("ZOTERO_API"),
+    collection = "7I5UDXCL",
+    limit = 100,
+    start = 0
+  ),
+  temp.file = tempfile(fileext = ".bib"),
+  delete.file = TRUE
+)
+
+bib2 <- ReadZotero(
+  user = Sys.getenv("ZOTERO_USER"),
+  .params = list(
+    key = Sys.getenv("ZOTERO_API"),
+    collection = "7I5UDXCL",
+    limit = 100,
+    start = 100
+  ),
+  temp.file = tempfile(fileext = ".bib"),
+  delete.file = TRUE
+)
+
+bib <- merge(bib1, bib2)
+
+# Create .bib in case I need it
+write(toBiblatex(bib), "assets/code/refs.bib")
+```

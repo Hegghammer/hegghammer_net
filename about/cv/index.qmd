@@ -1,0 +1,16 @@
+---
+title: Academic CV
+date: 2024-03-22
+published-title: Last updated
+---
+
+<p class="text-center">
+  <a class="btn btn-primary btn-lg cv-download" href="/assets/documents/cv.pdf" target="_blank">
+    <i class="fa-solid fa-file-arrow-down"></i>&ensp;Download
+  </a></br></br>
+</p>
+
+<div class="embed-container">
+  <iframe src="/assets/documents/cv.pdf" style="border: 0.5px"></iframe>
+</div>
+

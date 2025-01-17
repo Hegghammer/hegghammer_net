@@ -1,0 +1,72 @@
+project:
+  type: website
+  execute-dir: project
+  output-dir: docs
+  preview: 
+    port: 5555
+    browser: true
+    watch-inputs: true
+    navigate: true
+  post-render: 
+    - assets/code/move_files.R
+
+execute:
+  freeze: auto
+
+pagetitle: "Thomas Hegghammer"
+author-meta: "Thomas Hegghammer"
+
+website:
+  title: "Thomas Hegghammer"
+  description: "Thomas Hegghammer is a Senior Research Fellow at All Souls College."
+  favicon: assets/images/tabler--letter-h.png
+  site-url: "https://hegghammer.net"
+  repo-url: "https://github.com/Hegghammer/hegghammer_net"
+  search: false
+  reader-mode: false
+  
+  navbar:
+    left:
+      - icon: person
+        text: About
+        href: about/index.qmd
+      - icon: book
+        text: Publications
+        href: pubs/index.qmd
+      - icon: database
+        text: Resources 
+        href: resources/index.qmd
+    right:
+      - href: "{{< var orcid >}}"
+        text: "{{< iconify academicons:orcid size=1.7em title='ORCID' >}}"
+      - href: "{{< var google-scholar-profile >}}"
+        text: "{{< iconify academicons:google-scholar size=1.7em title='Google Scholar'>}}" 
+      - href: "{{< var zotero-profile >}}"
+        text: "{{< iconify academicons:zotero size=1.7em title='Zotero' >}}"
+      - href: "{{< var github-profile >}}"
+        text: "{{< iconify mdi:github size=1.7em title='Github' >}}" 
+      - href: "{{< var bluesky-profile >}}"
+        text: "{{< iconify fa6-brands:bluesky size=1.7em title='Bluesky'>}}"
+      - href: mailto:{{< var email >}}
+        text: "{{< iconify ic:baseline-email size=1.7em title='Email' >}}" 
+
+  page-footer:
+    left: |
+      [&copy; 2001-{{< var current-year >}} Thomas Hegghammer](about/index.qmd) <p xmlns:cc="http://creativecommons.org/ns#" >This work is licensed under <a href="https://creativecommons.org/licenses/by/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY 4.0<img style="height:15px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" alt=""><img style="height:15px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" alt=""></a></p>
+      
+    right: |
+      [{{< fa brands github >}} source code]({{< var github-website-repo >}})
+
+format:
+  html:
+    theme:
+      light: [flatly, assets/styles/theme-light.scss]
+      dark: [darkly, assets/styles/theme-dark.scss]
+    css: assets/styles/styles.css
+    toc: false
+    #mainfont: "Lato"
+
+resources:
+  - "/assets/*"
+
+

@@ -1,0 +1,45 @@
+---
+date: today
+published-title: Last updated
+---
+#### Book websites
+
+- [The Caravan](https://azzambook.net/)
+- [R for Alle](https://rforalle.net)
+
+#### Software
+
+- [dair: An R package for Google Document AI](https://dair.info/)
+- [papeRless: Access the Paperless-ngx API from R](https://github.com/Hegghammer/papeRless)
+
+#### Datasets
+
+- [Noisy OCR Dataset (NOD)](https://zenodo.org/record/5068735) (on Zenodo.org)
+
+#### Active Citation
+
+- [The Caravan: Abdallah Azzam and the Rise of Global Jihad](https://azzambook.net/active-citation-2/)
+
+- ["Abdallah Azzam and Palestine", *Die Welt des Islams* 53 (3-4), 2013](/resources/active-citation/azzam-and-palestine/index.qmd)
+
+- ["The Palestine Effect: The Role of Palestinians in the Transnational Jihad Movement". *Die Welt des Islams* 53 (3-4), 2013](/resources/active-citation/palestine-effect/index.qmd)
+
+#### Syllabi
+
+- "[Terrorism](/assets/documents/hegghammer_stanford_terrorism_syllabus_2013_1.2.pdf)" (upper undergraduate level), Stanford University, spring 2013
+
+- "[Terrorism and Political Violence in Western Democracies](https://www.uio.no/studier/emner/sv/statsvitenskap/STV4510/v19/timeplan/index.html#FOR)", University of Oslo, spring 2019.
+
+#### Selected lectures and testimonies
+
+- "[Text Extraction from Historical Documents in Arabic](https://www.youtube.com/watch?v=gG6tmxkR0gE)" (Youtube video), Arab Council for the Social Sciences, 13 December 2024.
+
+- "[Revisiting the Poverty-Terrorism Link in European Jihadism](/assets/documents/lecture_revisiting_poverty_terrorism_2016.pdf)" (Keynote speech, Society for Terrorism Research Annual Conference, Leiden, 2016) 
+
+- "[Why Terrorists Weep](/assets/documents/lecture_why_terrorists_weep_2015.pdf)" (Paul Wilkinson Memorial Lecture, University of St. Andrews, 2015)
+
+- "[The Future of Anti-Western Jihadism](http://docs.house.gov/meetings/FA/FA18/20130718/101155/HHRG-113-FA18-Wstate-HegghammerT-20130718.pdf)" (Prepared Testimony before the House Foreign Affairs Committee, Washington DC, 2013)
+
+#### Misc
+
+- "[Bibliography on jihadism in Scandinavia v1.2](/assets/documents/bibliography_jihadism_scandinavia_1.2.pdf)" (2018)

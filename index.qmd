@@ -1,0 +1,20 @@
+---
+image: assets/images/portrait.jpg
+toc: false
+about: 
+  template: jolla
+  image-shape: round
+  image-width: 20em
+---
+
+Welcome! I am a Senior Research Fellow in Politics at All Souls College, University of Oxford. My research focuses on militant Islamist groups, dynamics of clandestine activism, and digital methods. A quick look at my [books](/pubs/books/index.qmd) will give you a sense of what I have worked on. 
+
+::: {.news}
+### Recent activities
+
+- Lecture: "[Text Extraction from Historical Documents in Arabic](https://www.youtube.com/watch?v=gG6tmxkR0gE)" (Youtube), Arab Council for the Social Sciences, 13 December 2024.
+- Op-ed: "[Impostors at War](https://www.project-syndicate.org/commentary/mimicry-in-war-old-challenge-worse-with-new-technology-by-diego-gambetta-and-thomas-hegghammer-2024-12)" (with Diego Gambetta), *Project Syndicate*, 13 December 2024.
+- Article: "[Fifty Shades of Deprivation: Disaggregating Types of Economic Disadvantage in Studies of Terrorism]()" (with Steffen Hertog, Adrian Arellano, and Gudrun Østby), *International Studies Review*, November 2024.
+- Book: *[R for alle: Innføring i programmering for kvalitative fag](https://fagbokforlaget.no/products/9788245036862-r-for-alle)*, Fagbokforlaget, July 2024.
+- Edited book: *[Fight, Flight, Mimic: Identity Mimicry in Conflict](https://academic.oup.com/book/56358)* (with Diego Gambetta), Oxford University Press, May 2024.
+:::

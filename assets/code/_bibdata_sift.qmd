@@ -1,0 +1,56 @@
+```{r}
+#| label: sift-items
+#| include: false
+
+library(RefManageR)
+
+# Separate out pubs in Norwegian
+bib_no <- bib[language = "no"]
+bib_en <- bib[language = "!no", journal = "!Aljazeera.net"]
+
+# Sort into categories
+books_en <- bib_en[bibtype = "Book"]
+articles_en <- bib_en[bibtype = "Article"]
+chapters_en <- bib_en[bibtype = "Incollection"]
+reports_en <- bib_en[bibtype = "Report"]
+books_no <- bib_no[bibtype = "Book"]
+articles_no <- bib_no[bibtype = "Article"]
+chapters_no <- bib_no[bibtype = "Incollection"]
+reports_no <- bib_no[bibtype = "Report"]
+
+# Separate out reviews
+reviews_en <- articles_en[title = "*review*"]
+reviews_no <- articles_no[title = "*anmeldelse*"]
+articles_en <- setdiff(articles_en, reviews_en)
+articles_no <- setdiff(articles_no, reviews_no)
+
+# Separate academic from nonacademic articles
+nonaca_en <- c("The New York Times", "CNN.com", "The Washington Post", "Foreign Policy", "al-Sharq al-Awsat", "The National", "The Atlantic", "Times Higher Education", "Times Literary Supplement", "Forbes.com", "The Guardian", "The Sentinel", "History News Network", "Wall Street Journal", "Project Syndicate")
+arts_nonaca_en <- articles_en[journal = nonaca_en]
+arts_aca_en <- setdiff(articles_en, arts_nonaca_en)
+
+nonaca_no <- c("Romerikes Blad", "Aftenposten", "Forsvarets forum", "Forskning.no", "Verdens Gang", "FFI-Fokus", "Kortinfo", "Dagsavisen", "Morgenbladet")
+arts_nonaca_no <- bib_no[bibtype = "Article", journal = nonaca_no]
+arts_aca_no <- setdiff(articles_no, arts_nonaca_no)
+
+# Add reverse index numbers
+sort_and_index <- function(bibent) {
+  bibent <- sort(bibent, sorting = "ydnt")
+  indices <- 1:length(bibent)
+  bibent$index <- rev(indices)
+  bibent
+}
+
+books_en <- sort_and_index(books_en)
+arts_aca_en <- sort_and_index(arts_aca_en)
+chapters_en <- sort_and_index(chapters_en)
+reports_en <- sort_and_index(reports_en)
+reviews_en <- sort_and_index(reviews_en)
+arts_nonaca_en <- sort_and_index(arts_nonaca_en)
+books_no <- sort_and_index(books_no)
+arts_aca_no <- sort_and_index(arts_aca_no)
+chapters_no <- sort_and_index(chapters_no)
+reports_no <- sort_and_index(reports_no)
+reviews_no <- sort_and_index(reviews_no)
+arts_nonaca_no <- sort_and_index(arts_nonaca_no)
+```

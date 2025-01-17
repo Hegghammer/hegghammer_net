@@ -1,0 +1,29 @@
+---
+date: today
+published-title: Last updated
+---
+
+## Bio
+Thomas Hegghammer is Senior Research Fellow in Politics at All Souls College, Oxford University. He is a political scientist and historian who works on political violence in the Muslim world, especially transnational jihadi groups. His books include *The Caravan: Abdallah Azzam and the Rise of Global Jihad* (Cambridge, 2020), *Jihadi Culture: The Art and Social Practices of Militant Islamists* (Cambridge, 2017), and *Jihad in Saudi Arabia: Violence and Pan-Islamism since 1979* (Cambridge, 2010). Dr. Hegghammer previously worked at the Norwegian Defence Research Establishment (FFI) in Oslo and has held fellowships at Stanford, Princeton, Harvard, and the Institute for Advanced Study in Princeton.
+
+## CV
+
+[Academic CV](/about/cv/index.qmd)
+
+## Photos for media use
+
+:::: columns
+
+::: {.column width='25%'}
+![](/assets/images/portrait1.jpg){fig-align="left" width="100%"} 
+:::
+
+::: {.column width='1%'}
+:::
+
+::: {.column width='25%'}
+![](/assets/images/portrait-cropped.jpg){fig-align="left" width="89%"}
+:::
+
+::::
+

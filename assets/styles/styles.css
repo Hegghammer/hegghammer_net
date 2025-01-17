@@ -1,0 +1,69 @@
+/* css styles */
+
+#title-block-header .description {
+  display: none;
+}
+
+em {
+  font-size: 18px;
+}
+
+.embed-container {
+  position: relative;
+  padding-bottom: 129%;
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+}
+
+.embed-container iframe,
+.embed-container object,
+.embed-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.btn {
+  background-color: white;
+  color: #ff5733;
+  border-radius: 2px;
+  border: 1px solid #ff5733;
+}
+
+.btn:hover {
+  background-color: #ff8166;
+  color: white;
+}
+
+.cv-download {
+  padding: 3px 12px;
+  font-size: 18px;
+}
+
+.bib-link {
+  padding: 0px 4px;
+  font-size: 12px;
+}
+
+.navbar-nav .nav-item.active .nav-link,
+.navbar-nav .nav-item:hover .nav-link,
+.navbar-brand:hover {
+  color: #ff5733;
+}
+
+.navbar-brand:hover {
+  color: red;
+}
+
+.news {
+  text-align: left !important;
+  font-size: 17px;
+}
+
+.bib-index {
+  font-size: 12px;
+  color: #adb5bd;
+}

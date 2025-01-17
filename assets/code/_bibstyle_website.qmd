@@ -1,0 +1,550 @@
+```{r}
+#| label: format-bibstyle
+#| message: false
+#| warning: false
+#| include: false
+
+# Create a bibstyle for RefManageR to use on Quarto Websites
+# Features:
+# - Chicago style instead of JSS
+# - DOIs with links
+# - Titles with links if no DOI
+# - Indices
+# - Open access icon (requires "OA: TRUE/FALSE" in Extra field in Zotero)
+# - CSS classes for style control
+
+library(RefManageR)
+library(tools)
+
+# Copy default template
+custom <- RefManageR:::MakeBibLaTeX()
+
+#---- Helper functions -------------------------------------------------
+
+# Set CSS class
+# Adapted from https://dfolio.fr/posts/2024/2024-04-29_refmanager.html
+with(
+  custom,
+  custom$fmtSetClass <- function(s, class, prefix = "bib-") {
+    if (length(s)) {
+      paste0("[", s, "]\\{.", prefix, class, "\\}")
+    }
+  }
+)
+
+# Format URIs
+# Adapted from https://dfolio.fr/posts/2024/2024-04-29_refmanager.html
+with(
+  custom,
+  custom$fmtURI <- function(label, uri, prefix = "", uri_prefix = "", class = "uri") {
+    if (length(uri)) {
+      fmtSetClass(paste0("[", prefix, label, "](", uri, ")\\{rel='noopener noreferrer'\\}"), class)
+      # paste0("[", prefix, label, "](", uri, ")\\{rel='noopener noreferrer'\\}.")
+    }
+  }
+)
+
+# Add Open access icon
+with(
+  custom,
+  custom$fmtOA <- function(paper) {
+    if (length(paper$note)) {
+      n <- paper$note
+      if (grepl("OA: TRUE", n)) {
+        paste("\\{\\{< ai open-access color=green >\\}\\} </br>")
+      } else if (grepl("OA: FALSE", n)) {
+        paste("\\{\\{< ai closed-access color=red >\\}\\} </br>")
+      }
+    }
+  }
+)
+
+# Add index
+with(
+  custom,
+  custom$fmtPrefix <- function(paper) {
+    if (length(paper$index)) {
+      fmtSetClass(paste0("[", paper$index, "]"), class = "index")
+    }
+  }
+)
+
+# Make DOIs links with icon
+with(
+  custom,
+  custom$fmtDOI <- function(doi) {
+    if (length(doi)) {
+      enc.doi <- gsub("%", "\\\\%", URLencode(doi, reserved = TRUE))
+      fmtURI(
+        label = trimws(doi),
+        uri = paste0("https://doi.org/", enc.doi),
+        prefix = "\\{\\{< ai doi >\\}\\}", class = "doi"
+      )
+    }
+  }
+)
+
+# Remove parentheses around dates
+with(
+  custom,
+  custom$fmtJournDate <- function(s, usevenue = FALSE) {
+    res <- DateFormatter(attr(s, "dateobj"))
+    if (usevenue) {
+      paste0(
+        "(", paste0(c(cleanupLatex(gsub("[.?!]$", "",
+          s[["venue"]],
+          useBytes = FALSE
+        )), res), collapse = ", "),
+        ")"
+      )
+    } else {
+      paste0(c(s[["issue"]], res), collapse = " ")
+    }
+  }
+)
+
+# Make separate function for titles of edited books, to avoid URLs in them
+with(
+  custom,
+  custom$fmtEdBookTitle <- function(paper) {
+    if (length(paper$title)) {
+      res <- cleanupLatex(paper$title)
+      if (grepl("[.?!]$", res, useBytes = FALSE)) {
+        emph(res)
+      } else {
+        paste0(emph(res), ".")
+      }
+    }
+  }
+)
+
+# Have URL in book titles if there is no DOI
+with(
+  custom,
+  custom$fmtBTitle <- function(paper) {
+    if (length(paper$title)) {
+      t <- paper$title
+      if (length(paper$doi)) {
+        res <- cleanupLatex(t)
+        if (grepl("[.?!]$", res, useBytes = FALSE)) {
+          emph(res)
+        } else {
+          paste0(emph(res), ".")
+        }
+      } else {
+        res <- cleanupLatex(t)
+        if (length(paper$url)) {
+          paste0(fmtURI(label = res, uri = paper$url, class = "url"), ".")
+        } else {
+          paste0(res, ".")
+        }
+      }
+    }
+  }
+)
+
+# Have URL in article titles if there is no DOI
+with(
+  custom,
+  custom$fmtJTitle <- function(paper) {
+    if (length(paper$title)) {
+      t <- paper$title
+      if (length(paper$doi)) {
+        res <- cleanupLatex(t)
+        if (grepl("[.?!]$", res, useBytes = FALSE)) {
+          paste0("\\dQuote{", collapse(res), "}")
+        } else {
+          paste0("\\dQuote{", collapse(res), "}.")
+        }
+      } else {
+        res <- cleanupLatex(t)
+        if (length(paper$url)) {
+          url <- fmtURI(label = res, uri = paper$url, class = "url")
+          if (grepl("[.?!]$", res, useBytes = FALSE)) {
+            paste0("\\dQuote{", collapse(url), "}")
+          } else {
+            paste0("\\dQuote{", collapse(url), "}.")
+          }
+        } else {
+          if (grepl("[.?!]$", res, useBytes = FALSE)) {
+            paste0("\\dQuote{", collapse(res), "}")
+          } else {
+            paste0("\\dQuote{", collapse(res), "}.")
+          }
+        }
+      }
+    }
+  }
+)
+
+# Treat chapter titles like article titles
+with(
+  custom,
+  custom$fmtIBTitle <- function(paper) {
+    if (length(paper$title)) {
+      fmtJTitle(paper)
+    }
+  }
+)
+
+# Remove prefix "In: " before journal names and italicise journal names
+with(
+  custom,
+  custom$fmtJournal <- function(s) {
+    if (length(s$journaltitle)) {
+      res <- emph(cleanupLatex(s$journaltitle))
+      if (length(s$journalsubtitle)) {
+        res <- paste(addPeriod(res), emph(cleanupLatex(s$journalsubtitle)))
+      }
+      return(res)
+    } else if (!is.null(s$journal)) {
+      emph(cleanupLatex(s$journal))
+    }
+  }
+)
+
+# Change Vol-Issue separator from period to colon
+with(
+  custom,
+  custom$fmtVolume <- function(vol, num) {
+    if (length(vol)) {
+      res <- vol
+      if (length(num)) {
+        res <- paste(vol, num, sep = ":")
+      }
+      res
+    }
+  }
+)
+
+# Change editor prefix from "Ed. by" to "Ed."
+with(
+  custom,
+  custom$fmtSingleEditor <- function(nom, job, prefix = NULL, suffix = ".") {
+    if (length(nom)) {
+      if (length(job)) {
+        res <- paste0(switch(tolower(job),
+          compiler = "Comp. ",
+          editor = "Ed. ",
+          founder = "Found. ",
+          continuator = "Cont. ",
+          redactor = "Red. ",
+          reviser = "Rev. ",
+          collaborator = "In collab. with ",
+          job
+        ), nom)
+      } else {
+        res <- paste0("Ed. ", nom)
+      }
+      paste0(prefix, res, suffix)
+    }
+  }
+)
+
+# Bring book tweaks together
+with(
+  custom,
+  custom$formatBook <- function(paper, collection = FALSE) {
+    if (collection && length(paper$author)) {
+      paper$author <- NULL
+    }
+    if (length(paper$maintitle)) {
+      collapse(c(
+        fmtPrefix(paper),
+        fmtBAuthor(paper),
+        fmtBTitle(paper), # Input changed here
+        fmtAddOn(paper$maintitleaddon),
+        paste0(
+          c(
+            fmtBVolume(paper$volume, paper$part),
+            fmtBTitle(paper) # Input changed here
+          ),
+          collapse = ": "
+        ),
+        fmtAddOn(paper$titleaddon),
+        fmtLanguage(paper$language),
+        fmtEditor(paper, !length(paper$author)),
+        fmtTranslator(paper),
+        fmtCommentator(paper$commentator),
+        fmtAnnotator(paper$annotator),
+        fmtIntroduction(paper$introduction),
+        fmtForeword(paper$foreword),
+        fmtAfterword(paper$afterword),
+        fmtEdition(paper$edition),
+        fmtVolumes(paper$volumes),
+        sentence(cleanupLatex(paper$series), paper$number,
+          sep = " "
+        ),
+        # fmtNote(paper$note),  # used for icon
+        sentence(
+          fmtPublisher(
+            paper$publisher,
+            paper$location, paper$address
+          ),
+          fmtDate(attr(paper, "dateobj")),
+          fmtChapter(paper$chapter),
+          fmtPages(paper$pages, paper$bookpagination),
+          fmtTotalPages(paper$pagetotal, paper$bookpagination),
+          sep = ""
+        ),
+        fmtISBN(paper$isbn),
+        fmtOA(paper), # OA icon
+        fmtDOI(paper$doi), # DOI link
+        fmtEprint(paper),
+        # fmtURL(paper), # remove because already in title
+        fmtAddendum(paper$addendum),
+        fmtPubstate(paper$pubstate)
+      ))
+    } else {
+      collapse(c(
+        fmtPrefix(paper),
+        fmtBAuthor(paper),
+        fmtBTitle(paper), # Input changed here
+        fmtAddOn(paper$titleaddon),
+        fmtLanguage(paper$language),
+        fmtEditor(paper, !length(paper$author)),
+        fmtTranslator(paper),
+        fmtCommentator(paper$commentator),
+        fmtAnnotator(paper$annotator),
+        fmtIntroduction(paper$introduction),
+        fmtForeword(paper$foreword),
+        fmtAfterword(paper$afterword),
+        fmtEdition(paper$edition),
+        addPeriod(fmtBVolume(paper$volume, paper$part)),
+        fmtVolumes(paper$volumes),
+        sentence(
+          cleanupLatex(paper$series),
+          paper$number,
+          sep = " "
+        ),
+        # fmtNote(paper$note), # used for icon
+        sentenceP(
+          fmtPublisher(paper$publisher, paper$location, paper$address),
+          fmtDate(attr(paper, "dateobj")),
+          fmtChapter(paper$chapter),
+          pgs = fmtPages(
+            paper$pages,
+            paper$bookpagination
+          ),
+          tp = fmtTotalPages(
+            paper$pagetotal,
+            paper$bookpagination
+          ),
+          sep = ""
+        ),
+        fmtISBN(paper$isbn),
+        fmtOA(paper), # OA icon
+        fmtDOI(paper$doi), # DOI link
+        fmtEprint(paper),
+        # fmtURL(paper), # remove because already in title
+        fmtAddendum(paper$addendum),
+        fmtPubstate(paper$pubstate)
+      ))
+    }
+  }
+)
+
+# Bring article tweaks together
+with(
+  custom,
+  custom$formatArticle <- function(paper) {
+    collapse(c(
+      fmtPrefix(paper),
+      fmtBAuthor(paper),
+      fmtJTitle(paper), # Input changed here
+      fmtAddOn(paper$titleaddon),
+      fmtLanguage(paper$language),
+      fmtTranslator(paper),
+      fmtCommentator(paper$commentator),
+      fmtAnnotator(paper$annotator),
+      fmtVersion(paper$version),
+      sentenceP(
+        paste0(
+          c(
+            fmtJournal(paper),
+            fmtSeries(paper$series),
+            fmtVolume(paper$volume, paper$number),
+            fmtPages(paper$pages, paper$pagination),
+            fmtEditor(paper, suffix = NULL, prefix = ". ")
+          ),
+          collapse = " ", sep = ", " # remove comma bw jname and date
+        ),
+        fmtJournDate(paper),
+        # fmtBTitle(paper), # remove to avoid duplicate URL
+        fmtEditor(paper, suffix = NULL, prefix = ". "),
+        sep = ""
+      ),
+      fmtISSN(paper$issn),
+      fmtOA(paper), # OA icon
+      fmtDOI(paper$doi), # DOI link
+      fmtEprint(paper),
+      # fmtURL(paper), # remove because already in title
+      # fmtHAL(paper$hal_id), # doesn't exist
+      fmtAddendum(paper$addendum),
+      # fmtNote(paper$note), # remove because used elsewhere
+      fmtPubstate(paper$pubstate)
+    ))
+  }
+)
+
+# Bring report tweaks together
+with(
+  custom,
+  custom$formatReport <- function(paper, type = NULL) {
+    if (length(type)) {
+      paper$type <- type
+    }
+    if (!is.null(paper$school) && is.null(paper$institution)) {
+      paper$institution <- paper$school
+    }
+    collapse(c(
+      fmtPrefix(paper),
+      fmtBAuthor(paper),
+      fmtBTitle(paper), # Input changed here
+      fmtAddOn(paper$titleaddon),
+      fmtLanguage(paper$language),
+      # sentence(fmtType(paper$type), paper$number, sep = " "), # Remove "Tech. rep." from Reports
+      fmtVersion(paper$version),
+      # fmtNote(paper$note), # Remove because used elsewhere
+      sentenceP(
+        fmtPublisher(paper$institution, paper$location, paper$address),
+        fmtDate(attr(paper, "dateobj")),
+        fmtChapter(paper$chapter),
+        pgs = fmtPages(paper$pages, paper$bookpagination),
+        tp = fmtTotalPages(paper$pagetotal, paper$bookpagination),
+        sep = ""
+      ),
+      fmtISRN(paper$isrn),
+      fmtOA(paper), # OA icon
+      fmtDOI(paper$doi), # DOI link
+      fmtEprint(paper),
+      # fmtURL(paper), # remove because already in title
+      fmtAddendum(paper$addendum),
+      fmtPubstate(paper$pubstate)
+    ))
+  }
+)
+
+# Bring chapter tweaks together
+with(
+  custom,
+  custom$formatInCollection <- function(paper) {
+    if (length(paper$booktitle) && length(paper$maintitle)) { # this whole section is irrelevant bc no items have "maintitle"
+      collapse(c(
+        fmtPrefix(paper),
+        fmtBAuthor(paper),
+        fmtIBTitle(paper), # input adjusted
+        fmtAddOn(paper$titleaddon),
+        fmtLanguage(paper$language),
+        paste0(c(
+          "In: ",
+          #  fmtBTitle(paper))),
+          fmtEdBookTitle(paper)
+        )),
+        fmtAddOn(paper$maintitleaddon),
+        paste0(
+          c(
+            fmtBVolume(paper$volume, paper$part),
+            fmtBTitle(paper)
+          ),
+          collapse = ": "
+        ),
+        fmtAddOn(paper$booktitleaddon),
+        fmtEditor(paper, !length(paper$author)),
+        fmtTranslator(paper),
+        fmtCommentator(paper$commentator),
+        fmtAnnotator(paper$annotator),
+        fmtIntroduction(paper$introduction),
+        fmtForeword(paper$foreword),
+        fmtAfterword(paper$afterword),
+        fmtEdition(paper$edition),
+        fmtVolumes(paper$volumes),
+        sentence(cleanupLatex(paper$series),
+          paper$number,
+          sep = " "
+        ), fmtNote(paper$note),
+        sentenceP(
+          fmtPublisher(
+            paper$publisher, paper$location,
+            paper$address
+          ), fmtDate(attr(paper, "dateobj")),
+          fmtChapter(paper$chapter),
+          pgs = fmtPages(
+            paper$pages,
+            paper$bookpagination
+          ), tp = fmtTotalPages(
+            paper$pagetotal,
+            paper$bookpagination
+          ), sep = ""
+        ), fmtISBN(paper$isbn),
+        fmtOA(paper), # OA icon
+        fmtDOI(paper$doi),
+        fmtEprint(paper),
+        fmtURL(paper),
+        fmtAddendum(paper$addendum),
+        fmtPubstate(paper$pubstate)
+      ))
+    } else {
+      if (length(paper$maintitle)) {
+        paper$booktitle <- paper$maintitle
+        paper$booksubtitle <- paper$mainsubtitle
+        paper$booktitleaddon <- paper$maintitleaddon
+      }
+      collapse(c(
+        fmtPrefix(paper),
+        fmtBAuthor(paper),
+        fmtIBTitle(paper), # adjusted input
+        fmtAddOn(paper$titleaddon),
+        fmtLanguage(paper$language),
+        paste0(c(
+          "In: ",
+          #  fmtBTitle(paper))), # input adjusted
+          fmtEdBookTitle(paper)
+        )),
+        fmtAddOn(paper$booktitleaddon),
+        fmtEditor(paper, !length(paper$author)),
+        fmtTranslator(paper),
+        fmtCommentator(paper$commentator),
+        fmtAnnotator(paper$annotator),
+        fmtIntroduction(paper$introduction),
+        fmtForeword(paper$foreword),
+        fmtAfterword(paper$afterword),
+        fmtEdition(paper$edition),
+        addPeriod(fmtBVolume(paper$volume, paper$part)),
+        fmtVolumes(paper$volumes),
+        sentence(cleanupLatex(paper$series),
+          paper$number,
+          sep = " "
+        ),
+        # fmtNote(paper$note), #not used
+        sentenceP(
+          fmtPublisher(
+            paper$publisher, paper$location,
+            paper$address
+          ), fmtDate(attr(paper, "dateobj")),
+          fmtChapter(paper$chapter),
+          pgs = fmtPages(paper$pages, paper$bookpagination),
+          tp = fmtTotalPages(paper$pagetotal, paper$bookpagination), sep = ""
+        ),
+        fmtISBN(paper$isbn),
+        fmtOA(paper), # OA icon
+        fmtDOI(paper$doi),
+        fmtEprint(paper),
+        # fmtURL(paper), #will go in title
+        fmtAddendum(paper$addendum),
+        fmtPubstate(paper$pubstate)
+      ))
+    }
+  }
+)
+
+# ---- Save -------------------------------------------------
+
+bibstyle("website", custom)
+
+# If you want to save to file
+# bibstyle_website <- bibstyle("website", custom)
+# save(bibstyle_website, file = "assets/code/bibstyle_website.RData")
+# load("assets/bib/bibstyle_website.RData")
+# bibstyle("quarto-website", bibstyle_quarto_website)
+```

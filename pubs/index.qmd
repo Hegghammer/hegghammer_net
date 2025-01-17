@@ -1,0 +1,125 @@
+---
+title: Publications
+date: today
+published-title: Last updated
+echo: false
+toc: true
+---
+
+{{< include ../assets/code/_bibdata_get.qmd >}}
+
+{{< include ../assets/code/_bibdata_sift.qmd >}}
+
+{{< include ../assets/code/_bibstyle_website.qmd >}}
+
+```{r}
+#| label: set-options
+
+BibOptions(
+  check.entries = FALSE,
+  style = "markdown",
+  bib.style = "website",
+  sorting = "ydnt",
+  no.print.fields = c("isbn", "issn", "language", "urldate"),
+  first.inits = FALSE,
+  dashed = FALSE
+)
+```
+
+## Books
+
+```{r}
+#| label: print-books
+#| results: asis
+print(books_en)
+```
+
+## Articles
+
+```{r}
+#| label: print-academic-articles
+#| results: asis
+print(arts_aca_en)
+```
+
+## Chapters
+
+```{r}
+#| label: print-chapters
+#| results: asis
+print(chapters_en)
+```
+
+## Reports
+
+```{r}
+#| label: print-reports
+#| results: asis
+print(reports_en)
+```
+
+## Book reviews
+
+```{r}
+#| label: print-reviews
+#| results: asis
+print(reviews_en)
+```
+
+## Opeds and short articles
+
+```{r}
+#| label: print-short-articles
+#| results: asis
+print(arts_nonaca_en)
+```
+
+## Publications in Norwegian
+
+### Bøker
+
+```{r}
+#| label: print-books-no
+#| results: asis
+print(books_no)
+```
+
+### Artikler
+
+```{r}
+#| label: print-academic-articles-no
+#| results: asis
+print(arts_aca_no)
+```
+
+### Bokkapitler
+
+```{r}
+#| label: print-chapters-no
+#| results: asis
+print(chapters_no)
+```
+
+### Rapporter
+```{r}
+#| label: print-reports-no
+#| results: asis
+print(reports_no)
+```
+
+### Bokanmeldelser
+
+```{r}
+#| label: print-reviews-no
+#| results: asis
+print(reviews_no)
+```
+
+
+### Kronikker og andre artikler
+
+```{r}
+#| label: print-short-articles-no
+#| results: asis
+print(arts_nonaca_no)
+```
