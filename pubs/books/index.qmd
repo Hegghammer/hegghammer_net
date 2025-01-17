@@ -10,7 +10,6 @@ Click on the covers for more information.
 
 ::: {.column width='20%'}
 [![](/assets/images/fight-flight-mimic.jpg)](https://www.amazon.com/Fight-Flight-Mimic-Identity-Conflict/dp/0198739478){fig-alt="Cover of Fight, Flight, Mimic"}
-
 :::
 
 ::: {.column width='2.5%'}

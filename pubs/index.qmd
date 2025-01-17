@@ -115,7 +115,6 @@ print(reports_no)
 print(reviews_no)
 ```
 
-
 ### Kronikker og andre artikler
 
 ```{r}
