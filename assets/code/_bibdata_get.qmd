@@ -1,4 +1,5 @@
 ```{r}
+#| label: get-bibdata
 #| message: false
 #| warning: false
 #| include: false

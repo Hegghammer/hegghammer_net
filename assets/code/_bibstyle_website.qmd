@@ -1,9 +1,8 @@
 ```{r}
-#| label: format-bibstyle
 #| message: false
 #| warning: false
 #| include: false
-
+#
 # Create a bibstyle for RefManageR to use on Quarto Websites
 # Features:
 # - Chicago style instead of JSS
@@ -42,7 +41,6 @@ with(
   custom$fmtURI <- function(label, uri, prefix = "", uri_prefix = "", class = "uri") {
     if (length(uri)) {
       fmtSetClass(paste0("[", prefix, label, "](", uri, ")\\{rel='noopener noreferrer'\\}"), class)
-      # paste0("[", prefix, label, "](", uri, ")\\{rel='noopener noreferrer'\\}.")
     }
   }
 )
@@ -57,6 +55,26 @@ with(
         paste("\\{\\{< ai open-access color=green >\\}\\} </br>")
       } else if (grepl("OA: FALSE", n)) {
         paste("\\{\\{< ai closed-access color=red >\\}\\} </br>")
+      }
+    }
+  }
+)
+
+# Add data link
+with(
+  custom,
+  custom$fmtData <- function(paper) {
+    if (length(paper$note)) {
+      n <- paper$note
+      if (grepl("data", n)) {
+        note <- grep("data", n, value = TRUE)
+        link <- stringr::str_extract(note, "http.*")
+        uri <- fmtURI(
+          label = "Data",
+          uri = link,
+          prefix = "\\{\\{< fa brands github >\\}\\} ", class = "data"
+        )
+        paste("&nbsp; &nbsp;", uri)
       }
     }
   }
@@ -293,6 +311,7 @@ with(
         fmtISBN(paper$isbn),
         fmtOA(paper), # OA icon
         fmtDOI(paper$doi), # DOI link
+        fmtData(paper), # Data link
         fmtEprint(paper),
         # fmtURL(paper), # remove because already in title
         fmtAddendum(paper$addendum),
@@ -338,6 +357,7 @@ with(
         fmtISBN(paper$isbn),
         fmtOA(paper), # OA icon
         fmtDOI(paper$doi), # DOI link
+        fmtData(paper), # Data link
         fmtEprint(paper),
         # fmtURL(paper), # remove because already in title
         fmtAddendum(paper$addendum),
@@ -380,6 +400,7 @@ with(
       fmtISSN(paper$issn),
       fmtOA(paper), # OA icon
       fmtDOI(paper$doi), # DOI link
+      fmtData(paper), # Data link
       fmtEprint(paper),
       # fmtURL(paper), # remove because already in title
       # fmtHAL(paper$hal_id), # doesn't exist
@@ -420,6 +441,7 @@ with(
       fmtISRN(paper$isrn),
       fmtOA(paper), # OA icon
       fmtDOI(paper$doi), # DOI link
+      fmtData(paper), # Data link
       fmtEprint(paper),
       # fmtURL(paper), # remove because already in title
       fmtAddendum(paper$addendum),
@@ -482,6 +504,7 @@ with(
         ), fmtISBN(paper$isbn),
         fmtOA(paper), # OA icon
         fmtDOI(paper$doi),
+        fmtData(paper), # Data link
         fmtEprint(paper),
         fmtURL(paper),
         fmtAddendum(paper$addendum),
@@ -532,6 +555,7 @@ with(
         fmtISBN(paper$isbn),
         fmtOA(paper), # OA icon
         fmtDOI(paper$doi),
+        fmtData(paper), # Data link
         fmtEprint(paper),
         # fmtURL(paper), #will go in title
         fmtAddendum(paper$addendum),

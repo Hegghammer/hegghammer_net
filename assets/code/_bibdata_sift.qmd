@@ -1,6 +1,8 @@
 ```{r}
 #| label: sift-items
 #| include: false
+#| message: false
+#| warning: false
 
 if (!require("RefManageR")) install.packages("RefManageR")
 library(RefManageR)
