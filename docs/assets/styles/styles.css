@@ -54,9 +54,13 @@ em {
   color: #ff5733;
 }
 
-.navbar-brand:hover {
-  color: red;
+a:hover {
+  color: #ff5733;
 }
+
+/* .navbar-brand:hover {
+  color: red;
+} */
 
 .news {
   text-align: left !important;
@@ -68,11 +72,10 @@ em {
   color: #adb5bd;
 }
 
-/* a.bib-doi {
-  color: blue;
+.bib-data a {
+  color: SlateBlue !important;
 }
 
-a.bib-data {
-  color: green;
-  font-size: 30px;
-} */
+.bib-data a:hover {
+  color: blue !important;
+}

@@ -72,7 +72,7 @@ with(
         uri <- fmtURI(
           label = "Data",
           uri = link,
-          prefix = "\\{\\{< fa brands github >\\}\\} ", class = "data"
+          prefix = "\\{\\{< iconify et:documents >\\}\\} ", class = "data"
         )
         paste("&nbsp; &nbsp;", uri)
       }
