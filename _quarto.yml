@@ -10,6 +10,7 @@ project:
   post-render: 
     - assets/code/move_files.R
     - assets/code/recreate_cname.R
+    - assets/code/check_links.R
 
 date-format: "D MMMM YYYY"
 
@@ -55,7 +56,7 @@ website:
 
   page-footer:
     left: |
-      [&copy; 2001-{{< var current-year >}} Thomas Hegghammer](about/index.qmd) <p xmlns:cc="http://creativecommons.org/ns#" >This work is licensed under <a href="https://creativecommons.org/licenses/by/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY 4.0<img style="height:15px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" alt=""><img style="height:15px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" alt=""></a></p>
+      [&copy; 2001-{{< var current-year >}} Thomas Hegghammer](/about/index.qmd) <p xmlns:cc="http://creativecommons.org/ns#" >This work is licensed under <a href="https://creativecommons.org/licenses/by/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY 4.0<img style="height:15px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" alt=""><img style="height:15px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" alt=""></a></p>
     center: |
       ORCID: [0000-0001-6253-1518](https://orcid.org/0000-0001-6253-1518) 
     right: |
