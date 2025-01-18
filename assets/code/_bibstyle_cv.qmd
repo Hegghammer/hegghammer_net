@@ -8,8 +8,10 @@
 # Features:
 # - Chicago style instead of JSS
 # - Indices
-
+if (!require("RefManageR")) install.packages("RefManageR")
 library(RefManageR)
+
+if (!require("tools")) install.packages("tools")
 library(tools)
 
 # Copy default template

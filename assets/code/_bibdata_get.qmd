@@ -1,9 +1,9 @@
 ```{r}
-#| label: load-data
 #| message: false
 #| warning: false
 #| include: false
 
+if (!require("RefManageR")) install.packages("RefManageR")
 library(RefManageR)
 
 bib1 <- ReadZotero(

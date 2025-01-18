@@ -2,6 +2,7 @@
 #| label: sift-items
 #| include: false
 
+if (!require("RefManageR")) install.packages("RefManageR")
 library(RefManageR)
 
 # Separate out pubs in Norwegian

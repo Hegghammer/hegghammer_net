@@ -13,7 +13,10 @@
 # - Open access icon (requires "OA: TRUE/FALSE" in Extra field in Zotero)
 # - CSS classes for style control
 
+if (!require("RefManageR")) install.packages("RefManageR")
 library(RefManageR)
+
+if (!require("tools")) install.packages("tools")
 library(tools)
 
 # Copy default template
