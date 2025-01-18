@@ -10,7 +10,7 @@ project:
   post-render: 
     - assets/code/move_files.R
     - assets/code/recreate_cname.R
-    # - assets/code/check_links.R
+    - assets/code/check_links.R
 
 date-format: "D MMMM YYYY"
 

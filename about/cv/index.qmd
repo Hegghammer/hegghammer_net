@@ -1,7 +1,5 @@
 ---
 title: Academic CV
-date: today
-published-title: Last updated
 ---
 
 <p class="text-center">
