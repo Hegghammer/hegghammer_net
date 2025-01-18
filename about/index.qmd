@@ -16,15 +16,16 @@ Thomas Hegghammer is Senior Research Fellow in Politics at All Souls College, Ox
 :::: columns
 
 ::: {.column width='25%'}
-![](assets/images/portrait1.jpg){fig-align="left" width="100%"} 
+![](/assets/images/portrait1.jpg){fig-align="left" width="100%"} 
 :::
 
 ::: {.column width='1%'}
 :::
 
 ::: {.column width='25%'}
-![](assets/images/portrait-cropped.jpg){fig-align="left" width="89%"}
+![](/assets/images/portrait-cropped.jpg){fig-align="left" width="89%"}
 :::
 
 ::::
 
+<!--  -->
