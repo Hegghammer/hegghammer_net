@@ -1,10 +1,12 @@
 
 -------------------------------------------------------
 Results of markdown-link-check for hegghammer_net/*
-run on 18 Jan 2025 at 16:03:07.
+run on 19 Jan 2025 at 16:04:56.
 -------------------------------------------------------
 
-140 external links checked, 2 broken links found:
+140 external links checked, 4 broken links found:
+  [✖] https://academic.oup.com/book/56358
+  [✖] https://academic.oup.com/book/56358 → Status: 403
   [✖] https://academic.oup.com/book/56358
   [✖] https://academic.oup.com/book/56358 → Status: 403
 

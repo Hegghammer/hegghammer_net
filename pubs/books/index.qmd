@@ -9,28 +9,28 @@ Click on the covers for more information.
 :::: columns
 
 ::: {.column width='20%'}
-[![](/assets/images/fight-flight-mimic.jpg)](https://www.amazon.com/Fight-Flight-Mimic-Identity-Conflict/dp/0198739478){fig-alt="Cover of Fight, Flight, Mimic"}
+[![](/assets/images/fight-flight-mimic.jpg)](https://academic.oup.com/book/56358){fig-alt="Cover of Fight, Flight, Mimic"}
 :::
 
 ::: {.column width='2.5%'}
 :::
 
 ::: {.column width='20%'}
-[![](/assets/images/caravan.jpg)](https://www.amazon.com/Caravan-Abdallah-Azzam-Global-Jihad/dp/0521765951){fig-alt="Cover of The Caravan"}
+[![](/assets/images/caravan.jpg)](https://azzambook.net){fig-alt="Cover of The Caravan"}
 :::
 
 ::: {.column width='2.5%'}
 :::
 
 ::: {.column width='20%'}
-[![](/assets/images/jihadi-culture.jpg)](https://www.amazon.com/Jihadi-Culture-Practices-Militant-Islamists/dp/1107614562/){fig-alt="Cover of Jihadi Culture"}
+[![](/assets/images/jihadi-culture.jpg)](https://www.cambridge.org/core/books/jihadi-culture/4789CC01AC481729A8677486B2F3588B){fig-alt="Cover of Jihadi Culture"}
 :::
 
 ::: {.column width='2.5%'}
 :::
 
 ::: {.column width='20%'}
-[![](/assets/images/jihad-in-saudi-arabia.jpg)](https://www.amazon.com/Jihad-Saudi-Arabia-Pan-Islamism-Cambridge/dp/0521732360){fig-alt="Cover of Jihad in Saudi Arabia"}
+[![](/assets/images/jihad-in-saudi-arabia.jpg)](https://www.cambridge.org/core/books/jihad-in-saudi-arabia/63E728E8B7D14C487DEF4B013CE3D335){fig-alt="Cover of Jihad in Saudi Arabia"}
 :::
 
 ::::
@@ -38,21 +38,21 @@ Click on the covers for more information.
 :::: columns
 
 ::: {.column width='20%'}
-[![](/assets/images/saudi-arabia-in-transition.jpg)](https://www.amazon.com/Saudi-Arabia-Transition-Political-Religious/dp/0521185092){fig-alt="Cover of Saudi Arabia in Transition"}
+[![](/assets/images/saudi-arabia-in-transition.jpg)](https://www.cambridge.org/core/books/saudi-arabia-in-transition/5F4ECB4B7D5503EF11155C471EEA0540){fig-alt="Cover of Saudi Arabia in Transition"}
 :::
 
 ::: {.column width='2.5%'}
 :::
 
 ::: {.column width='20%'}
-[![](/assets/images/meccan-rebellion.jpg)](https://www.amazon.com/Meccan-Rebellion-Juhayman-al-Utaybi-Revisited/dp/0955235995){fig-alt="Cover of The Meccan Rebellion"}
+[![](/assets/images/meccan-rebellion.jpg)](https://www.google.co.uk/books/edition/The_Meccan_Rebellion/4nvkZwEACAAJ?hl=en){fig-alt="Cover of The Meccan Rebellion"}
 :::
 
 ::: {.column width='2.5%'}
 :::
 
 ::: {.column width='20%'}
-[![](/assets/images/r-for-alle.jpg)](https://fagbokforlaget.no/products/9788245036862-r-for-alle){fig-alt="Cover of R for alle"}
+[![](/assets/images/r-for-alle.jpg)](https://rforalle.net){fig-alt="Cover of R for alle"}
 :::
 
 ::: {.column width='2.5%'}
