@@ -15,7 +15,8 @@ published-title: Last updated
 
 #### Datasets
 
-- [Noisy OCR Dataset (NOD)](https://zenodo.org/record/5068735) (on Zenodo.org)
+- [Declassified transcripts from Norway's Extended Foreign Affairs Committee 1924–1992](https://zenodo.org/records/19052379) (on Zenodo.org). Associated draft paper [here](https://github.com/Hegghammer/efac/blob/main/article/manuscript.pdf).
+- [Noisy OCR Dataset (NOD)](https://zenodo.org/record/5068735) (on Zenodo.org). Associated article [here](https://doi.org/10.1007%2Fs42001-021-00149-1). 
 
 #### Active Citation
 
@@ -27,9 +28,11 @@ published-title: Last updated
 
 #### Syllabi
 
-- "[Terrorism](/assets/documents/hegghammer_stanford_terrorism_syllabus_2013_1.2.pdf)" (upper undergraduate level), Stanford University, spring 2013
+- "[Computational Methods for Area Studies](/assets/documents/cmas_2026_04_26.pdf)", University of Oxford, Trinity term 2026.
 
 - "[Terrorism and Political Violence in Western Democracies](https://www.uio.no/studier/emner/sv/statsvitenskap/STV4510/v19/timeplan/index.html#FOR)", University of Oslo, spring 2019.
+
+- "[Terrorism](/assets/documents/hegghammer_stanford_terrorism_syllabus_2013_1.2.pdf)" (upper undergraduate level), Stanford University, spring 2013
 
 #### Selected lectures and testimonies
 

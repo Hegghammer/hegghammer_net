@@ -1,2 +1,4 @@
 /.quarto/
 hegghammer_net.code-workspace
+
+**/*.quarto_ipynb

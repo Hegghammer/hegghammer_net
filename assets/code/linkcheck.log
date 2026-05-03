@@ -1,14 +1,62 @@
 
 -------------------------------------------------------
 Results of markdown-link-check for hegghammer_net/*
-run on 19 Jan 2025 at 16:04:56.
+run on  3 May 2026 at 11:19:49.
 -------------------------------------------------------
 
-140 external links checked, 4 broken links found:
+167 external links checked, 52 broken links found:
+  [✖] https://hegghammer.net
+  [✖] https://dair.info
+  [✖] https://hegghammer.net → Status: 0
+  [✖] https://dair.info → Status: 0
+  [✖] https://www.project-syndicate.org/commentary/mimicry-in-war-old-challenge-worse-with-new-technology-by-diego-gambetta-and-thomas-hegghammer-2024-12
+  [✖] https://fagbokforlaget.no/products/9788245036862-r-for-alle
   [✖] https://academic.oup.com/book/56358
+  [✖] https://www.project-syndicate.org/commentary/mimicry-in-war-old-challenge-worse-with-new-technology-by-diego-gambetta-and-thomas-hegghammer-2024-12 → Status: 0
+  [✖] https://fagbokforlaget.no/products/9788245036862-r-for-alle → Status: 0
   [✖] https://academic.oup.com/book/56358 → Status: 403
   [✖] https://academic.oup.com/book/56358
+  [✖] https://azzambook.net
+  [✖] https://rforalle.net
+  [✖] https://azzambook.net/
   [✖] https://academic.oup.com/book/56358 → Status: 403
+  [✖] https://azzambook.net → Status: 0
+  [✖] https://rforalle.net → Status: 0
+  [✖] https://azzambook.net/ → Status: 0
+  [✖] https://drive.google.com/file/d/0B2rR3ZuTtMGIWE5ldEZQbF9makk/edit?usp=sharing
+  [✖] https://drive.google.com/file/d/0B2rR3ZuTtMGIdVVwSnlqZ3NVelk/edit?usp=sharing
+  [✖] https://drive.google.com/file/d/0B2rR3ZuTtMGITUF3bUhUX1U1UFU/edit?usp=sharing
+  [✖] https://drive.google.com/file/d/0B2rR3ZuTtMGIOTFma0NTLXNzV1E/edit?usp=sharing
+  [✖] https://drive.google.com/file/d/0B2rR3ZuTtMGIdkZnWlhKUHk1ZVE/edit?usp=sharing
+  [✖] https://drive.google.com/file/d/0B2rR3ZuTtMGIWmJrYzNJN1VhTWs/edit?usp=sharing
+  [✖] https://drive.google.com/file/d/0B2rR3ZuTtMGIZUtHMl93UElrU0U/edit?usp=sharing
+  [✖] https://drive.google.com/file/d/0B2rR3ZuTtMGISjdrcFgzd0pVV0U/edit?usp=sharing
+  [✖] https://drive.google.com/file/d/0B2rR3ZuTtMGIWE5ldEZQbF9makk/edit?usp=sharing → Status: 401
+  [✖] https://drive.google.com/file/d/0B2rR3ZuTtMGIdVVwSnlqZ3NVelk/edit?usp=sharing → Status: 401
+  [✖] https://drive.google.com/file/d/0B2rR3ZuTtMGITUF3bUhUX1U1UFU/edit?usp=sharing → Status: 401
+  [✖] https://drive.google.com/file/d/0B2rR3ZuTtMGIOTFma0NTLXNzV1E/edit?usp=sharing → Status: 401
+  [✖] https://drive.google.com/file/d/0B2rR3ZuTtMGIdkZnWlhKUHk1ZVE/edit?usp=sharing → Status: 401
+  [✖] https://drive.google.com/file/d/0B2rR3ZuTtMGIWmJrYzNJN1VhTWs/edit?usp=sharing → Status: 401
+  [✖] https://drive.google.com/file/d/0B2rR3ZuTtMGIZUtHMl93UElrU0U/edit?usp=sharing → Status: 401
+  [✖] https://drive.google.com/file/d/0B2rR3ZuTtMGISjdrcFgzd0pVV0U/edit?usp=sharing → Status: 401
+  [✖] https://azzambook.net/
+  [✖] https://rforalle.net
+  [✖] https://dair.info/
+  [✖] https://zenodo.org/records/19052379
+  [✖] https://zenodo.org/record/5068735
+  [✖] https://doi.org/10.1007%2Fs42001-021-00149-1
+  [✖] https://azzambook.net/active-citation-2/
+  [✖] https://www.uio.no/studier/emner/sv/statsvitenskap/STV4510/v19/timeplan/index.html#FOR
+  [✖] http://docs.house.gov/meetings/FA/FA18/20130718/101155/HHRG-113-FA18-Wstate-HegghammerT-20130718.pdf
+  [✖] https://azzambook.net/ → Status: 0
+  [✖] https://rforalle.net → Status: 0
+  [✖] https://dair.info/ → Status: 0
+  [✖] https://zenodo.org/records/19052379 → Status: 0
+  [✖] https://zenodo.org/record/5068735 → Status: 0
+  [✖] https://doi.org/10.1007%2Fs42001-021-00149-1 → Status: 0
+  [✖] https://azzambook.net/active-citation-2/ → Status: 0
+  [✖] https://www.uio.no/studier/emner/sv/statsvitenskap/STV4510/v19/timeplan/index.html#FOR → Status: 0
+  [✖] http://docs.house.gov/meetings/FA/FA18/20130718/101155/HHRG-113-FA18-Wstate-HegghammerT-20130718.pdf → Status: 0
 
 Details:
 
