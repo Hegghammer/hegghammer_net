@@ -1,35 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://hegghammer.net/resources/index.html</loc>
-    <lastmod>2026-05-03T10:09:13.646Z</lastmod>
+    <loc>https://hegghammer.net/resources/active-citation/palestine-effect/index.html</loc>
+    <lastmod>2026-09-02T18:14:28.297Z</lastmod>
   </url>
   <url>
-    <loc>https://hegghammer.net/resources/active-citation/azzam-and-palestine/index.html</loc>
-    <lastmod>2026-05-03T09:44:53.816Z</lastmod>
+    <loc>https://hegghammer.net/resources/index.html</loc>
+    <lastmod>2026-09-02T18:14:28.297Z</lastmod>
   </url>
   <url>
     <loc>https://hegghammer.net/pubs/books/index.html</loc>
-    <lastmod>2026-05-03T09:44:53.816Z</lastmod>
-  </url>
-  <url>
-    <loc>https://hegghammer.net/about/cv/index.html</loc>
-    <lastmod>2026-05-03T09:44:53.779Z</lastmod>
+    <lastmod>2026-09-02T18:14:28.297Z</lastmod>
   </url>
   <url>
     <loc>https://hegghammer.net/about/index.html</loc>
-    <lastmod>2026-05-03T09:44:53.779Z</lastmod>
+    <lastmod>2026-09-02T18:14:28.241Z</lastmod>
   </url>
   <url>
     <loc>https://hegghammer.net/index.html</loc>
-    <lastmod>2026-05-03T09:44:53.816Z</lastmod>
+    <lastmod>2026-09-02T18:14:28.297Z</lastmod>
+  </url>
+  <url>
+    <loc>https://hegghammer.net/about/cv/index.html</loc>
+    <lastmod>2026-09-02T18:14:28.241Z</lastmod>
   </url>
   <url>
     <loc>https://hegghammer.net/pubs/index.html</loc>
-    <lastmod>2026-05-03T09:44:53.816Z</lastmod>
+    <lastmod>2026-09-02T18:14:28.297Z</lastmod>
   </url>
   <url>
-    <loc>https://hegghammer.net/resources/active-citation/palestine-effect/index.html</loc>
-    <lastmod>2026-05-03T09:44:53.816Z</lastmod>
+    <loc>https://hegghammer.net/privacy.html</loc>
+    <lastmod>2026-09-02T18:42:53.804Z</lastmod>
+  </url>
+  <url>
+    <loc>https://hegghammer.net/resources/active-citation/azzam-and-palestine/index.html</loc>
+    <lastmod>2026-09-02T18:14:28.297Z</lastmod>
   </url>
 </urlset>

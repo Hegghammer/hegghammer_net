@@ -1,0 +1,7 @@
+---
+title: "Privacy"
+---
+
+This website uses no form of visitor analytics. It does not use tracking pixels, advertising trackers, or analytics cookies, and I do not collect or retain statistics about visits to the site.
+
+The site is hosted by [GitHub Pages](https://pages.github.com/). GitHub may process basic request data as needed to deliver and secure the service. Links from this site lead to other websites with their own privacy practices.

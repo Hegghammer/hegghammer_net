@@ -60,7 +60,7 @@ website:
     center: |
       ORCID: [0000-0001-6253-1518](https://orcid.org/0000-0001-6253-1518) 
     right: |
-      [{{< fa brands github >}} source code]({{< var github-website-repo >}})
+      [Privacy](/privacy.qmd) · [{{< fa brands github >}} source code]({{< var github-website-repo >}})
 
 format:
   html:
@@ -72,5 +72,4 @@ format:
 
 resources:
   - "/assets/*"
-
 
