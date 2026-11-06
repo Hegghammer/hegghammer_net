@@ -1,20 +1,295 @@
 
 -------------------------------------------------------
 Results of markdown-link-check for hegghammer_net/*
-run on  2 Sep 2026 at 20:57:25.
+run on  6 Nov 2026 at 17:39:01.
 -------------------------------------------------------
 
-147 external links checked, 10 broken links found:
+143 external links checked, 2 broken links found:
+Link checker exited with status 123; results may be incomplete.
   [✖] https://academic.oup.com/book/56358
-  [✖] https://academic.oup.com/book/56358 → Status: 403
   [✖] https://academic.oup.com/book/56358
-  [✖] https://academic.oup.com/book/56358 → Status: 403
-  [✖] https://www.uio.no/studier/emner/sv/statsvitenskap/STV4510/v19/timeplan/index.html#FOR
-  [✖] https://www.uio.no/studier/emner/sv/statsvitenskap/STV4510/v19/timeplan/index.html#FOR → Status: 404
-  [✖] https://drive.google.com/file/d/0B2rR3ZuTtMGIOUhaVnl3TjZLTmc/edit?usp=sharing
-  [✖] https://drive.google.com/file/d/0B2rR3ZuTtMGIRlFFN0J3Q1k0a1U/edit?usp=sharing
-  [✖] https://drive.google.com/file/d/0B2rR3ZuTtMGIOUhaVnl3TjZLTmc/edit?usp=sharing → Status: 401
-  [✖] https://drive.google.com/file/d/0B2rR3ZuTtMGIRlFFN0J3Q1k0a1U/edit?usp=sharing → Status: 401
 
 Details:
+(node:722719) ExperimentalWarning: Support for loading ES Module in require() is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
 
+FILE: ./resources/index.qmd
+  [✓] https://azzambook.net/
+  [✓] https://rforalle.net
+  [✓] https://dair.info/
+  [✓] https://github.com/Hegghammer/papeRless
+  [✓] https://zenodo.org/records/22838045
+  [✓] https://zenodo.org/records/19052379
+  [✓] https://github.com/Hegghammer/efac/blob/main/article/manuscript.pdf
+  [✓] https://zenodo.org/records/23991333
+  [✓] https://zenodo.org/record/5068735
+  [✓] https://doi.org/10.1007%2Fs42001-021-00149-1
+  [✓] https://azzambook.net/active-citation-2/
+  [✖] /resources/active-citation/azzam-and-palestine/index.qmd
+  [✖] /resources/active-citation/palestine-effect/index.qmd
+  [✖] /assets/documents/cmas_2026_04_26.pdf
+  [✖] /assets/documents/hegghammer_stanford_terrorism_syllabus_2013_1.2.pdf
+  [✓] https://www.youtube.com/watch?v=gG6tmxkR0gE
+  [✖] /assets/documents/lecture_revisiting_poverty_terrorism_2016.pdf
+  [✖] /assets/documents/lecture_why_terrorists_weep_2015.pdf
+  [✓] http://docs.house.gov/meetings/FA/FA18/20130718/101155/HHRG-113-FA18-Wstate-HegghammerT-20130718.pdf
+  [✖] /assets/documents/bibliography_jihadism_scandinavia_1.2.pdf
+
+  20 links checked.
+
+  ERROR: 7 dead links found!
+  [✖] /resources/active-citation/azzam-and-palestine/index.qmd → Status: 400
+  [✖] /resources/active-citation/palestine-effect/index.qmd → Status: 400
+  [✖] /assets/documents/cmas_2026_04_26.pdf → Status: 400
+  [✖] /assets/documents/hegghammer_stanford_terrorism_syllabus_2013_1.2.pdf → Status: 400
+  [✖] /assets/documents/lecture_revisiting_poverty_terrorism_2016.pdf → Status: 400
+  [✖] /assets/documents/lecture_why_terrorists_weep_2015.pdf → Status: 400
+  [✖] /assets/documents/bibliography_jihadism_scandinavia_1.2.pdf → Status: 400
+(node:722844) ExperimentalWarning: Support for loading ES Module in require() is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+FILE: ./resources/active-citation/palestine-effect/index.qmd
+  [✓] https://drive.google.com/file/d/0B2rR3ZuTtMGIRTVjYzVPOFZ1alU/edit?usp=sharing
+  [✓] https://drive.google.com/file/d/0B2rR3ZuTtMGIOWU1THRBZmhUeVk/edit?usp=sharing
+  [✓] https://drive.google.com/file/d/0B2rR3ZuTtMGIMk1yb3ZXQ2s5eXM/edit?usp=sharing
+  [✓] https://drive.google.com/file/d/0B2rR3ZuTtMGIYmk5b3FUT2Q3OEE/edit?usp=sharing
+  [✓] https://drive.google.com/file/d/0B2rR3ZuTtMGIQWN1YmZTV0diSGc/edit?usp=sharing
+  [✓] https://drive.google.com/file/d/0B2rR3ZuTtMGIa3FYREQwcWZJSHM/edit?usp=sharing
+  [✓] https://drive.google.com/file/d/0B2rR3ZuTtMGINjhCVTJKeUFNN1E/edit?usp=sharing
+  [✓] https://drive.google.com/file/d/0B2rR3ZuTtMGIYnhJaTA2Ym52bm8/edit?usp=sharing
+
+  8 links checked.
+(node:722956) ExperimentalWarning: Support for loading ES Module in require() is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+FILE: ./resources/active-citation/azzam-and-palestine/index.qmd
+  [✓] https://drive.google.com/file/d/0B2rR3ZuTtMGIRmNrOGZDX2oxZGM/edit?usp=sharing
+  [✓] https://drive.google.com/file/d/0B2rR3ZuTtMGISWdrTTJxM1dTd0U/edit?usp=sharing
+  [✓] https://drive.google.com/file/d/0B2rR3ZuTtMGIcUg4RTdHNG5fSjA/edit?usp=sharing
+  [✓] https://drive.google.com/file/d/0B2rR3ZuTtMGIYjYzTFhIV0dOb00/edit?usp=sharing
+  [✓] https://drive.google.com/file/d/0B2rR3ZuTtMGIS3pZUFBYMXBhc2M/edit?usp=sharing
+  [✓] https://drive.google.com/file/d/0B2rR3ZuTtMGIMDVQN0JWOTlzODA/edit?usp=sharing
+  [✓] https://drive.google.com/file/d/0B2rR3ZuTtMGId0VUbTdwZTM0NmM/edit?usp=sharing
+  [✓] https://drive.google.com/file/d/0B2rR3ZuTtMGISV91U0h1UWVzY2M/edit?usp=sharing
+  [✓] https://drive.google.com/file/d/0B2rR3ZuTtMGIc0Jia0JQU0I2d0E/edit?usp=sharing
+  [✓] https://drive.google.com/file/d/0B2rR3ZuTtMGIVmNmU3ltbjlIbEk/edit?usp=sharing
+  [✓] https://drive.google.com/file/d/0B2rR3ZuTtMGIOHVFRjhKM3NSUm8/edit?usp=sharing
+  [✓] https://drive.google.com/file/d/0B2rR3ZuTtMGIWUlSeWR4ZjZwSzQ/edit?usp=sharing
+  [✓] https://drive.google.com/file/d/0B2rR3ZuTtMGIaEFFMHotSV9aWU0/edit?usp=sharing
+  [✓] https://drive.google.com/file/d/0B2rR3ZuTtMGIWkxJbWMzU3VaYkE/edit?usp=sharing
+  [✓] https://drive.google.com/file/d/0B2rR3ZuTtMGIeHdheWhBanBKMFk/edit?usp=sharing
+  [✓] https://drive.google.com/file/d/0B2rR3ZuTtMGIaElJTUxXc25GQzA/edit?usp=sharing
+  [✓] https://drive.google.com/file/d/0B2rR3ZuTtMGIV016Y2pzMWk5ckk/edit?usp=sharing
+  [✓] https://drive.google.com/file/d/0B2rR3ZuTtMGINkJ3dzF4WVoxb2M/edit?usp=sharing
+  [✓] https://drive.google.com/file/d/0B2rR3ZuTtMGIX3lkWnVwS1VRZmc/edit?usp=sharing
+  [✓] https://drive.google.com/file/d/0B2rR3ZuTtMGITFE1NktFQkFjYm8/edit?usp=sharing
+  [✓] https://drive.google.com/file/d/0B2rR3ZuTtMGIekhJa2ROUVhwa2c/edit?usp=sharing
+  [✓] https://drive.google.com/file/d/0B2rR3ZuTtMGIaEdiMlRQelF3b28/edit?usp=sharing
+  [✓] https://drive.google.com/file/d/0B2rR3ZuTtMGIYlN1NENQc19TS00/edit?usp=sharing
+  [✓] https://drive.google.com/file/d/0B2rR3ZuTtMGILVgzT1JMN2FyWmc/edit?usp=sharing
+  [✓] https://drive.google.com/file/d/0B2rR3ZuTtMGIZG5rNzNrLVNLMTQ/edit?usp=sharing
+  [✓] https://drive.google.com/file/d/0B2rR3ZuTtMGIVTRWellxazNpSjg/edit?usp=sharing
+  [✓] https://drive.google.com/file/d/0B2rR3ZuTtMGISndMX3p4b3p0TGc/edit?usp=sharing
+  [✓] https://drive.google.com/file/d/0B2rR3ZuTtMGIbjlMOWszUkxSVTA/edit?usp=sharing
+  [✓] https://drive.google.com/file/d/0B2rR3ZuTtMGIb19zRjZlUUE4N3M/edit?usp=sharing
+  [✓] https://drive.google.com/file/d/0B2rR3ZuTtMGIZ3ZWekRVNUhoUjA/edit?usp=sharing
+  [✓] https://drive.google.com/file/d/0B2rR3ZuTtMGIUTEzUmlKTVQyWkk/edit?usp=sharing
+  [✓] https://drive.google.com/file/d/0B2rR3ZuTtMGISmJRcVZYd2N2Ykk/edit?usp=sharing
+  [✓] https://drive.google.com/file/d/0B2rR3ZuTtMGIODBDbVRjaU9qUkU/edit?usp=sharing
+  [✓] https://drive.google.com/file/d/0B2rR3ZuTtMGIYm9RdEVOMVYzX00/edit?usp=sharing
+  [✓] https://drive.google.com/file/d/0B2rR3ZuTtMGId3NlcWVLWDRqYzQ/edit?usp=sharing
+  [✓] https://drive.google.com/file/d/0B2rR3ZuTtMGIWE5ldEZQbF9makk/edit?usp=sharing
+  [✓] https://drive.google.com/file/d/0B2rR3ZuTtMGIdGNFX2k2VzBaMjA/edit?usp=sharing
+  [✓] https://drive.google.com/file/d/0B2rR3ZuTtMGIRjZGVktTaGxqLWc/edit?usp=sharing
+  [✓] https://drive.google.com/file/d/0B2rR3ZuTtMGIUVNqRTA5NHk1NXc/edit?usp=sharing
+  [✓] https://drive.google.com/file/d/0B2rR3ZuTtMGIdWsxT0FXN3NSZTQ/edit?usp=sharing
+  [✓] https://drive.google.com/file/d/0B2rR3ZuTtMGIdVVwSnlqZ3NVelk/edit?usp=sharing
+  [✓] https://drive.google.com/file/d/0B2rR3ZuTtMGIcFczc0g0aXVSR0k/edit?usp=sharing
+  [✓] https://drive.google.com/file/d/0B2rR3ZuTtMGIOUhaVnl3TjZLTmc/edit?usp=sharing
+  [✓] https://drive.google.com/file/d/0B2rR3ZuTtMGIVGpRdVdla0NYMFU/edit?usp=sharing
+  [✓] https://drive.google.com/file/d/0B2rR3ZuTtMGITUF3bUhUX1U1UFU/edit?usp=sharing
+  [✓] https://drive.google.com/file/d/0B2rR3ZuTtMGIZzhaVHBrcFhQRG8/edit?usp=sharing
+  [✓] https://drive.google.com/file/d/0B2rR3ZuTtMGISUZveERwakJqV1k/edit?usp=sharing
+  [✓] https://drive.google.com/file/d/0B2rR3ZuTtMGIaEFlaVNIc0dtT2c/edit?usp=sharing
+  [✓] https://drive.google.com/file/d/0B2rR3ZuTtMGIUWU0OGZQRXVyMTQ/edit?usp=sharing
+  [✓] https://drive.google.com/file/d/0B2rR3ZuTtMGIQndFNlZFZGJ1NUU/edit?usp=sharing
+  [✓] https://drive.google.com/file/d/0B2rR3ZuTtMGIYXZqNXRTWWtkbDA/edit?usp=sharing
+  [✓] https://drive.google.com/file/d/0B2rR3ZuTtMGIWVJBem1DRndBTHM/edit?usp=sharing
+  [✓] https://drive.google.com/file/d/0B2rR3ZuTtMGIOTFma0NTLXNzV1E/edit?usp=sharing
+  [✓] https://drive.google.com/file/d/0B2rR3ZuTtMGIOFo0b2ZyOUpnTUU/edit?usp=sharing
+  [✓] https://drive.google.com/file/d/0B2rR3ZuTtMGIOUs2YmpHX0xJNEU/edit?usp=sharing
+  [✓] https://drive.google.com/file/d/0B2rR3ZuTtMGIRlFFN0J3Q1k0a1U/edit?usp=sharing
+  [✓] https://drive.google.com/file/d/0B2rR3ZuTtMGIU1VGQkpHTjRNQU0/edit?usp=sharing
+  [✓] https://drive.google.com/file/d/0B2rR3ZuTtMGIeGhudGVYVHJwdWc/edit?usp=sharing
+  [✓] https://drive.google.com/file/d/0B2rR3ZuTtMGIM0E1dGwzanU3WnM/edit?usp=sharing
+  [✓] https://drive.google.com/file/d/0B2rR3ZuTtMGIbjlycjV4djhoZ2c/edit?usp=sharing
+  [✓] https://drive.google.com/file/d/0B2rR3ZuTtMGIZ25pYnRJWkdKUkk/edit?usp=sharing
+  [✓] https://drive.google.com/file/d/0B2rR3ZuTtMGIQ1hFWmpjclNlaVk/edit?usp=sharing
+  [✓] https://drive.google.com/file/d/0B2rR3ZuTtMGIZFMyMDhlQW1LYms/edit?usp=sharing
+  [✓] https://drive.google.com/file/d/0B2rR3ZuTtMGIdkZnWlhKUHk1ZVE/edit?usp=sharing
+  [✓] https://drive.google.com/file/d/0B2rR3ZuTtMGIMlRtT1JFU0dZYVk/edit?usp=sharing
+  [✓] https://drive.google.com/file/d/0B2rR3ZuTtMGIRFRoalRuWXZadzQ/edit?usp=sharing
+  [✓] https://drive.google.com/file/d/0B2rR3ZuTtMGIaF9mNnJnaldmd2M/edit?usp=sharing
+  [✓] https://drive.google.com/file/d/0B2rR3ZuTtMGIaUo0Q1BWYTZpM1E/edit?usp=sharing
+  [✓] https://drive.google.com/file/d/0B2rR3ZuTtMGIWmJrYzNJN1VhTWs/edit?usp=sharing
+  [✓] https://drive.google.com/file/d/0B2rR3ZuTtMGIZUtHMl93UElrU0U/edit?usp=sharing
+  [✓] https://drive.google.com/file/d/0B2rR3ZuTtMGING96eU1WUTd1T2s/edit?usp=sharing
+  [✓] https://drive.google.com/file/d/0B2rR3ZuTtMGIQ1JnSllpejYyZjQ/edit?usp=sharing
+  [✓] https://drive.google.com/file/d/0B2rR3ZuTtMGISnhxenFqODY4bHc/edit?usp=sharing
+  [✓] https://drive.google.com/file/d/0B2rR3ZuTtMGIZVRMOXZ3Q0ZXVFU/edit?usp=sharing
+  [✓] https://drive.google.com/file/d/0B2rR3ZuTtMGIZlFjN1ktREl0azQ/edit?usp=sharing
+  [✓] https://drive.google.com/file/d/0B2rR3ZuTtMGIbUUycUYtdjlxcEk/edit?usp=sharing
+  [✓] https://drive.google.com/file/d/0B2rR3ZuTtMGIdlhvTlo1SkhsaGc/edit?usp=sharing
+  [✓] https://drive.google.com/file/d/0B2rR3ZuTtMGIWEVHZ3JJZTAwb0U/edit?usp=sharing
+  [✓] https://drive.google.com/file/d/0B2rR3ZuTtMGIMDJiRVFNLXhjNk0/edit?usp=sharing
+  [✓] https://drive.google.com/file/d/0B2rR3ZuTtMGIeFRzSEhFMmFOSzA/edit?usp=sharing
+  [✓] https://drive.google.com/file/d/0B2rR3ZuTtMGIaGlfT1kxQWVEaUE/edit?usp=sharing
+  [✓] https://drive.google.com/file/d/0B2rR3ZuTtMGIdm5JSWVaVVpsUUE/edit?usp=sharing
+  [✓] https://drive.google.com/file/d/0B2rR3ZuTtMGId1psLXlERWJhQWc/edit?usp=sharing
+  [✓] https://drive.google.com/file/d/0B2rR3ZuTtMGINEFWRXNfaFR3M28/edit?usp=sharing
+  [✓] https://drive.google.com/file/d/0B2rR3ZuTtMGIaElWTVVJMG02cms/edit?usp=sharing
+  [✓] https://drive.google.com/file/d/0B2rR3ZuTtMGIUlBIUG8xTnhiWWs/edit?usp=sharing
+  [✓] https://drive.google.com/file/d/0B2rR3ZuTtMGIMVdVU2lndVYweFE/edit?usp=sharing
+  [✓] https://drive.google.com/file/d/0B2rR3ZuTtMGISFRFdkZoZ3Z0ZEU/edit?usp=sharing
+  [✓] https://drive.google.com/file/d/0B2rR3ZuTtMGIeV9KeVNUNTRmYjQ/edit?usp=sharing
+  [✓] https://drive.google.com/file/d/0B2rR3ZuTtMGIWHN1ZlIwNG15Uk0/edit?usp=sharing
+  [✓] https://drive.google.com/file/d/0B2rR3ZuTtMGIMXZGM0N2eHkyNWc/edit?usp=sharing
+  [✓] https://drive.google.com/file/d/0B2rR3ZuTtMGIU3ZsRGFzQlN2enM/edit?usp=sharing
+  [✓] https://drive.google.com/file/d/0B2rR3ZuTtMGIUk43UVNqZTBNMm8/edit?usp=sharing
+  [✓] https://drive.google.com/file/d/0B2rR3ZuTtMGIejljdTNmN3hGWmM/edit?usp=sharing
+  [✓] https://drive.google.com/file/d/0B2rR3ZuTtMGIOTgwaUgtMW5OejA/edit?usp=sharing
+  [✓] https://drive.google.com/file/d/0B2rR3ZuTtMGISjdrcFgzd0pVV0U/edit?usp=sharing
+  [✓] https://drive.google.com/file/d/0B2rR3ZuTtMGIaWowVlgwaWJ6ajA/edit?usp=sharing
+  [✓] https://drive.google.com/file/d/0B2rR3ZuTtMGIQTJDNjFlT0ZIMkU/edit?usp=sharing
+  [✓] https://drive.google.com/file/d/0B2rR3ZuTtMGIUFRhUjNOenBaVWM/edit?usp=sharing
+  [✓] https://drive.google.com/file/d/0B2rR3ZuTtMGIYjBWSl9WU0twM0E/edit?usp=sharing
+  [✓] https://drive.google.com/file/d/0B2rR3ZuTtMGIdmg3Vk1XelZrU0U/edit?usp=sharing
+  [✓] https://drive.google.com/file/d/0B2rR3ZuTtMGIVUFPU0xkdks2Zlk/edit?usp=sharing
+  [✓] https://drive.google.com/file/d/0B2rR3ZuTtMGIeUFpU2NPM1dCNkU/edit?usp=sharing
+  [✓] https://drive.google.com/file/d/0B2rR3ZuTtMGIdWwxQzdPQVVvWms/edit?usp=sharing
+  [✓] https://drive.google.com/file/d/0B2rR3ZuTtMGIQ0NRdGdEZmc1bHc/edit?usp=sharing
+  [✓] https://drive.google.com/file/d/0B2rR3ZuTtMGIekN6aFRqdTVfRFU/edit?usp=sharing
+  [✓] https://drive.google.com/file/d/0B2rR3ZuTtMGIWEZseTlxWUh3cTA/edit?usp=sharing
+
+  107 links checked.
+(node:723658) ExperimentalWarning: Support for loading ES Module in require() is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+FILE: ./about/index.qmd
+  [✖] /about/cv/index.qmd
+  [✖] /assets/images/portrait1.jpg
+  [✖] /assets/images/portrait-cropped.jpg
+
+  3 links checked.
+
+  ERROR: 3 dead links found!
+  [✖] /about/cv/index.qmd → Status: 400
+  [✖] /assets/images/portrait1.jpg → Status: 400
+  [✖] /assets/images/portrait-cropped.jpg → Status: 400
+(node:723682) ExperimentalWarning: Support for loading ES Module in require() is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+FILE: ./about/cv/index.qmd
+  [✖] /assets/documents/cv.pdf
+
+  1 link checked.
+
+  ERROR: 1 dead link found!
+  [✖] /assets/documents/cv.pdf → Status: 400
+(node:723708) ExperimentalWarning: Support for loading ES Module in require() is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+FILE: ./assets/code/build_cv.qmd
+  [✓] mailto:thomas.hegghammer@all-souls.ox.ac.uk
+  [✓] https://hegghammer.net
+  [✓] https://dair.info
+
+  3 links checked.
+(node:723722) ExperimentalWarning: Support for loading ES Module in require() is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+FILE: ./assets/code/_bibstyle_website.qmd
+  No hyperlinks found!
+
+  0 links checked.
+(node:723734) ExperimentalWarning: Support for loading ES Module in require() is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+FILE: ./assets/code/_bibdata_get.qmd
+  No hyperlinks found!
+
+  0 links checked.
+(node:723760) ExperimentalWarning: Support for loading ES Module in require() is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+FILE: ./assets/code/_bibdata_sift.qmd
+  No hyperlinks found!
+
+  0 links checked.
+(node:723791) ExperimentalWarning: Support for loading ES Module in require() is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+FILE: ./assets/code/_bibstyle_cv.qmd
+  No hyperlinks found!
+
+  0 links checked.
+(node:723824) ExperimentalWarning: Support for loading ES Module in require() is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+FILE: ./index.qmd
+  [✖] /pubs/books/index.qmd
+  [✓] https://www.youtube.com/watch?v=gG6tmxkR0gE
+  [✓] https://www.project-syndicate.org/commentary/mimicry-in-war-old-challenge-worse-with-new-technology-by-diego-gambetta-and-thomas-hegghammer-2024-12
+  [✓] https://fagbokforlaget.no/products/9788245036862-r-for-alle
+  [✖] https://academic.oup.com/book/56358
+
+  5 links checked.
+
+  ERROR: 2 dead links found!
+  [✖] /pubs/books/index.qmd → Status: 400
+  [✖] https://academic.oup.com/book/56358 → Status: 403
+(node:723870) ExperimentalWarning: Support for loading ES Module in require() is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+FILE: ./pubs/books/index.qmd
+  [✖] https://academic.oup.com/book/56358
+  [✓] https://azzambook.net
+  [✓] https://www.cambridge.org/core/books/jihadi-culture/4789CC01AC481729A8677486B2F3588B
+  [✓] https://www.cambridge.org/core/books/jihad-in-saudi-arabia/63E728E8B7D14C487DEF4B013CE3D335
+  [✓] https://www.cambridge.org/core/books/saudi-arabia-in-transition/5F4ECB4B7D5503EF11155C471EEA0540
+  [✓] https://www.google.co.uk/books/edition/The_Meccan_Rebellion/4nvkZwEACAAJ?hl=en
+  [✓] https://rforalle.net
+  [✓] https://azzambook.net/
+  [✖] /assets/images/fight-flight-mimic.jpg
+  [✖] /assets/images/caravan.jpg
+  [✖] /assets/images/jihadi-culture.jpg
+  [✖] /assets/images/jihad-in-saudi-arabia.jpg
+  [✖] /assets/images/saudi-arabia-in-transition.jpg
+  [✖] /assets/images/meccan-rebellion.jpg
+  [✖] /assets/images/r-for-alle.jpg
+
+  15 links checked.
+
+  ERROR: 8 dead links found!
+  [✖] https://academic.oup.com/book/56358 → Status: 403
+  [✖] /assets/images/fight-flight-mimic.jpg → Status: 400
+  [✖] /assets/images/caravan.jpg → Status: 400
+  [✖] /assets/images/jihadi-culture.jpg → Status: 400
+  [✖] /assets/images/jihad-in-saudi-arabia.jpg → Status: 400
+  [✖] /assets/images/saudi-arabia-in-transition.jpg → Status: 400
+  [✖] /assets/images/meccan-rebellion.jpg → Status: 400
+  [✖] /assets/images/r-for-alle.jpg → Status: 400
+(node:723956) ExperimentalWarning: Support for loading ES Module in require() is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+FILE: ./pubs/index.qmd
+  No hyperlinks found!
+
+  0 links checked.
+(node:723967) ExperimentalWarning: Support for loading ES Module in require() is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+FILE: ./privacy.qmd
+  [✓] https://pages.github.com/
+
+  1 link checked.

@@ -15,7 +15,8 @@ published-title: Last updated
 
 #### Datasets
 
-- [Declassified transcripts from Norway's Extended Foreign Affairs Committee 1924–1992](https://zenodo.org/records/19052379) (on Zenodo.org). Associated draft paper [here](https://github.com/Hegghammer/efac/blob/main/article/manuscript.pdf).
+- [Jihadi Personal Accounts Dataset (JPAD)](https://zenodo.org/records/22838045) (on Zenodo.org).
+- [Declassified transcripts from Norway's Extended Foreign Affairs Committee 1924–1992](https://zenodo.org/records/19052379) (on Zenodo.org). Associated draft paper [here](https://github.com/Hegghammer/efac/blob/main/article/manuscript.pdf) and source PDFs [here](https://zenodo.org/records/23991333).
 - [Noisy OCR Dataset (NOD)](https://zenodo.org/record/5068735) (on Zenodo.org). Associated article [here](https://doi.org/10.1007%2Fs42001-021-00149-1). 
 
 #### Active Citation
@@ -30,7 +31,7 @@ published-title: Last updated
 
 - "[Computational Methods for Area Studies](/assets/documents/cmas_2026_04_26.pdf)", University of Oxford, Trinity term 2026.
 
-- "[Terrorism and Political Violence in Western Democracies](https://www.uio.no/studier/emner/sv/statsvitenskap/STV4510/v19/timeplan/index.html#FOR)", University of Oslo, spring 2019.
+- "Terrorism and Political Violence in Western Democracies (STV4510)", University of Oslo, spring 2019.
 
 - "[Terrorism](/assets/documents/hegghammer_stanford_terrorism_syllabus_2013_1.2.pdf)" (upper undergraduate level), Stanford University, spring 2013
 
